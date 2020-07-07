@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #33b9d6#33b9d6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditNumberController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #338da1#338da1;">
+            <children>
+                <Label layoutX="78.0" layoutY="45.0" text="Журнал:" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat Medium" size="22.0" />
+                    </font>
+                </Label>
+                <Button fx:id="editNumberInfo" layoutX="156.0" layoutY="255.0" mnemonicParsing="false" onAction="#editNumberInfoEvent" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #fff2bd#fff2bd #fff2bd#fff2bd;" text="Изменить">
+                    <font>
+                        <Font name="Montserrat Medium" size="13.0" />
+                    </font>
+                </Button>
+            <Label layoutX="411.0" layoutY="45.0" text="Номер журнала:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NumberNumFieldEdit" layoutX="401.0" layoutY="73.0" prefHeight="29.0" prefWidth="222.0" style="-fx-background-color: #33b9d6#33b9d6 #33b9d6#33b9d6; -fx-border-color: #ffffff; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Montserrat Medium" size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="closeWindow" layoutX="21.0" layoutY="255.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #fff2bd#fff2bd #fff2bd#fff2bd;" text="Закрыть">
+               <font>
+                  <Font name="Montserrat Medium" size="13.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="magazineNumDatePickerEdit" editable="false" layoutX="401.0" layoutY="145.0" prefHeight="27.0" prefWidth="222.0" showWeekNumbers="true" style="-fx-background-color: #33b9d6#33b9d6 #33b9d6#33b9d6 #33b9d6#33b9d6 #33b9d6#33b9d6; -fx-border-color: #ffffff; -fx-border-radius: 3;" />
+            <Label layoutX="411.0" layoutY="117.0" prefHeight="28.0" prefWidth="176.0" text="Дата релиза:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NumbersFieldNumOfPagesEdit" layoutX="65.0" layoutY="145.0" prefHeight="29.0" prefWidth="263.0" style="-fx-background-color: #33b9d6#33b9d6 #33b9d6#33b9d6; -fx-border-color: #ffffff; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Montserrat Medium" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="78.0" layoutY="117.0" prefHeight="28.0" prefWidth="263.0" text="Количество страниц:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteNumber" layoutX="566.0" layoutY="255.0" mnemonicParsing="false" onAction="#deleteNumberEvent" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #fff2bd#fff2bd #fff2bd#fff2bd;" text="Удалить">
+               <font>
+                  <Font name="Montserrat Medium" size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="magazinesComboBox" layoutX="65.0" layoutY="74.0" prefHeight="27.0" prefWidth="263.0" style="-fx-background-color: #33b9d6#33b9d6 #33b9d6#33b9d6 #33b9d6#33b9d6 #33b9d6#33b9d6; -fx-border-color: #ffffff; -fx-border-radius: 3;" />
+            </children></AnchorPane>
+        <Label layoutX="87.0" layoutY="29.0" text="Редактировать номер" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Montserrat Medium" size="45.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

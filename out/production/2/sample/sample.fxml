@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #33b9d6#33b9d6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #338da1#338da1;">
+         <children>
+            <Button fx:id="SignUpButton" layoutX="14.0" layoutY="259.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="127.0" style="-fx-background-color: #fff2bd#fff2bd; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 3;" text="Регистрация">
+               <font>
+                  <Font name="Montserrat Medium" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="LoginField" layoutX="253.0" layoutY="73.0" style="-fx-background-color: #33b9d6#33b9d6 #33b9d6#33b9d6; -fx-border-color: #ffffff; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Montserrat Thin" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PasswordField" layoutX="253.0" layoutY="144.0" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: #33b9d6#33b9d6 #33b9d6#33b9d6; -fx-border-color: #ffffff; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Montserrat Thin" size="13.0" />
+               </font></PasswordField>
+            <Label layoutX="305.0" layoutY="45.0" text="Логин:" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="317.5" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Montserrat Medium" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" layoutY="116.0" text="Пароль:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignInButton" layoutX="291.0" layoutY="198.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #fff2bd#fff2bd #fff2bd#fff2bd; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 3;" text="Войти">
+               <font>
+                  <Font name="Montserrat Medium" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="192.0" layoutY="24.0" text="Авторизация" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Medium" size="45.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
